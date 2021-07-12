@@ -1,4 +1,3 @@
-
 exports.min = function min (array) {
   if (typeof array === 'undefined') {
     return 0;
@@ -10,7 +9,7 @@ exports.min = function min (array) {
       minElement = array[i];
     }
   }
-  return minElement ?? 0;
+  return minElement || 0;
 }
 
 exports.max = function max (array) {
@@ -24,7 +23,7 @@ exports.max = function max (array) {
       maxElement = array[i];
     }
   }
-  return maxElement ?? 0;
+  return maxElement || 0;
 }
 
 exports.avg = function avg (array) {
